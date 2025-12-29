@@ -1,0 +1,101 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: none;
+    font-family: $font-family;
+
+    &-primary {
+        background: $naranja-accent;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba($naranja-accent, 0.3);
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba($naranja-accent, 0.4);
+        }
+    }
+
+    &-outline {
+        background: transparent;
+        border: 2px solid $verde-boutique;
+        color: $verde-boutique;
+
+        &:hover {
+            background: $verde-boutique;
+            color: #fff;
+        }
+    }
+
+    &-link {
+        background: transparent;
+        color: $gris-deep;
+        text-decoration: underline;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:hover {
+            color: $verde-boutique;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: $shadow;
+    transition: transform 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    .tag {
+        display: inline-block;
+        padding: 6px 16px;
+        background: rgba($verde-boutique, 0.1);
+        color: $verde-boutique;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: $gris-deep;
+    }
+
+    p {
+        color: $gris;
+        line-height: 1.7;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    color: $gris;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+}

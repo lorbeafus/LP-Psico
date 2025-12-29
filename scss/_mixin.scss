@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@mixin card {
+
+    border: 1px solid #eee;
+    border-radius: $radius;
+    background: #fff;
+    padding: 18px;
+    box-shadow: $shadow;
+}
+
+@mixin container($max: 1400px) {
+    max-width: $max;
+    margin: auto;
+    padding: 0 20px;
+}
