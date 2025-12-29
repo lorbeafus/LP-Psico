@@ -20,9 +20,14 @@ h2 {
     margin-bottom: 25px;
 }
 
-p {
-    font-size: 18px;
+p,
+li {
+    font-size: 20px;
     color: $gris;
+    margin-bottom: 15px;
+}
+
+ul {
     margin-bottom: 20px;
 }
 
