@@ -9,6 +9,12 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    @include respond-to('tablet') {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
     .logo-box {
         width: 80px;
         height: 80px;
@@ -29,6 +35,12 @@ header {
         display: flex;
         align-items: center;
         gap: 40px;
+
+        @include respond-to('mobile') {
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         a {
             color: $gris-deep;
@@ -57,17 +69,35 @@ header {
         align-items: center;
         gap: 80px;
         padding: 0px 50px;
+
+        @include respond-to('tablet') {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0 20px;
+        }
     }
 
     .hero-text {
         flex: 1;
         text-align: left;
 
+        @include respond-to('tablet') {
+            text-align: center;
+        }
+
         h2 {
             font-size: 72px;
             color: $gris-deep;
             margin-bottom: 30px;
             line-height: 1.1;
+
+            @include respond-to('tablet') {
+                font-size: 48px;
+            }
+
+            @include respond-to('mobile') {
+                font-size: 36px;
+            }
         }
 
         p {
@@ -75,6 +105,11 @@ header {
             color: $gris;
             margin-bottom: 50px;
             max-width: 800px;
+
+            @include respond-to('tablet') {
+                font-size: 18px;
+                margin: 0 auto 30px;
+            }
         }
     }
 
@@ -82,6 +117,19 @@ header {
         display: flex;
         gap: 25px;
         align-items: center;
+
+        @include respond-to('tablet') {
+            justify-content: center;
+        }
+
+        @include respond-to('mobile') {
+            flex-direction: column;
+            width: 100%;
+
+            .btn {
+                width: 100%;
+            }
+        }
     }
 
     .hero-visual {
@@ -95,6 +143,11 @@ header {
         position: relative;
         width: 500px;
         height: 500px;
+
+        @include respond-to('tablet') {
+            width: 300px;
+            height: 300px;
+        }
     }
 
     .hero-img {
@@ -146,11 +199,27 @@ section {
     border-radius: $radius;
     box-shadow: $shadow;
 
+    @include respond-to('laptop') {
+        gap: 60px;
+        padding: 60px;
+    }
+
+    @include respond-to('tablet') {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
     img {
         width: 450px;
         height: auto;
         border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
         box-shadow: $shadow;
+
+        @include respond-to('tablet') {
+            width: 100%;
+            max-width: 300px;
+        }
     }
 
     .metodo-text {
@@ -179,6 +248,11 @@ section {
                     left: 0;
                     color: $verde-boutique;
                     font-weight: 700;
+                }
+
+                @include respond-to('mobile') {
+                    font-size: 18px;
+                    padding-left: 30px;
                 }
             }
         }
