@@ -710,3 +710,75 @@ footer {
         text-align: center;
     }
 }
+
+// Accessibility
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// Testimonial Avatars
+.testimonio-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonio-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $verde-boutique;
+    flex-shrink: 0;
+}
+
+// Form Feedback
+.form-feedback {
+    text-align: center;
+    padding: 30px 20px;
+    animation: fadeInUp 0.5s ease;
+
+    p {
+        font-size: 18px;
+        color: $verde-boutique;
+        font-weight: 600;
+    }
+}
+
+.form-badge {
+    display: inline-block;
+    background: rgba($naranja-accent, .1);
+    color: $naranja-accent;
+    padding: 6px 18px;
+    border-radius: $radius;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.form-subtitle {
+    font-size: 15px !important;
+    color: $gris;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

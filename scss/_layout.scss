@@ -31,15 +31,64 @@ header {
         }
     }
 
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+
+        @include respond-to('tablet') {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: $gris-deep;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        &.active {
+            .hamburger-line:nth-child(1) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+            .hamburger-line:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger-line:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+        }
+    }
+
     .nav-main {
         display: flex;
         align-items: center;
         gap: 40px;
 
-        @include respond-to('mobile') {
-            gap: 20px;
-            flex-wrap: wrap;
+        @include respond-to('tablet') {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background: #fff;
+            flex-direction: column;
             justify-content: center;
+            gap: 30px;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+            transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            z-index: 1000;
+
+            &.nav-open {
+                right: 0;
+            }
         }
 
         a {
@@ -85,7 +134,7 @@ header {
             text-align: center;
         }
 
-        h2 {
+        h1, h2 {
             font-size: 72px;
             color: $gris-deep;
             margin-bottom: 30px;

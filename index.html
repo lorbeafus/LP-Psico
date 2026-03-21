@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nutrición y bienestar para mujeres +40. Plan nutricional personalizado, seguimiento profesional y resultados reales sin dietas extremas. Consultá ahora.">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Nutricionista</title>
+    <title>Nutricionista — Nutrición y Bienestar para Mujeres +40</title>
 </head>
 
 <body>
 
     <header>
         <div class="logo-box">
-            <img src="assets/img/logo.jpg" alt="Logo">
+            <img src="assets/img/logo.jpg" alt="Logo Nutrición y Bienestar">
         </div>
 
-        <nav class="nav-main">
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <nav class="nav-main" id="nav-main">
             <a href="#about">Propuesta</a>
             <a href="#servicios">Servicios</a>
+            <a href="#planes">Planes</a>
             <a href="#cta" class="btn btn-outline">Consulta gratuita</a>
         </nav>
     </header>
@@ -26,7 +34,7 @@
     <section class="hero-boutique">
         <div class="hero-container">
             <div class="hero-text" data-aos="fade-right">
-                <h2>¿Mujer de +40? Bajá esa panza que no se va con nada</h2>
+                <h1>Recuperá tu bienestar después de los 40</h1>
                 <p>
                     Método comprobado por más de 30,000 mujeres transformadas.
                     Sin dietas extremas, sin pasar hambre — resultados visibles en 7 días.
@@ -52,19 +60,27 @@
             <p>
                 Esta propuesta está pensada especialmente para mujeres de más de 40 años que
                 quieren cuidar su salud, su bienestar y su energía, respetando su cuerpo y su ritmo.
+                Sin dietas extremas, sin pasar hambre — resultados visibles y sostenibles.
             </p>
         </div>
     </section>
 
     <section id="metodo">
         <div class="metodo-container" data-aos="fade-left">
-            <img src="assets/img/perfil.png" alt="Perfil">
+            <img src="assets/img/perfil.png" alt="Foto de perfil profesional">
             <div class="metodo-text">
                 <h2>Quién soy</h2>
-
+                <p>
+                    Soy profesional de la salud con un enfoque integral que combina
+                    nutrición y bienestar emocional. Mi misión es acompañarte en un cambio
+                    real, sin recetas mágicas ni restricciones imposibles.
+                </p>
                 <ul>
                     <li>Psicóloga nutricionista con más de 10 años de experiencia</li>
                     <li>Formada en psicología clínica y nutrición</li>
+                    <li>Especialización en alimentación consciente y hábitos saludables</li>
+                    <li>Más de 30,000 mujeres acompañadas en su proceso de transformación</li>
+                    <li>Docente y conferencista en bienestar integral</li>
                 </ul>
             </div>
         </div>
@@ -127,8 +143,11 @@
                 <p>Después de años probando dietas, finalmente encontré algo que funciona. Bajé 8 kg en el primer mes
                     sin pasar hambre.</p>
                 <div class="testimonio-author">
-                    <strong>María, 47 años</strong>
-                    <span>Buenos Aires</span>
+                    <img src="assets/img/avatar-maria.png" alt="Foto de María" class="testimonio-avatar">
+                    <div>
+                        <strong>María, 47 años</strong>
+                        <span>Buenos Aires</span>
+                    </div>
                 </div>
             </div>
             <div class="testimonio-card">
@@ -136,8 +155,11 @@
                 <p>Mi panza era mi mayor inseguridad. En 3 semanas ya noté cambios increíbles. ¡Recuperé mi confianza!
                 </p>
                 <div class="testimonio-author">
-                    <strong>Laura, 52 años</strong>
-                    <span>Córdoba</span>
+                    <img src="assets/img/avatar-laura.png" alt="Foto de Laura" class="testimonio-avatar">
+                    <div>
+                        <strong>Laura, 52 años</strong>
+                        <span>Córdoba</span>
+                    </div>
                 </div>
             </div>
             <div class="testimonio-card">
@@ -145,8 +167,11 @@
                 <p>Lo mejor es que aprendí a comer bien sin restricciones extremas. Bajé 12 kg y me siento con más
                     energía que nunca.</p>
                 <div class="testimonio-author">
-                    <strong>Carolina, 45 años</strong>
-                    <span>Rosario</span>
+                    <img src="assets/img/avatar-carolina.png" alt="Foto de Carolina" class="testimonio-avatar">
+                    <div>
+                        <strong>Carolina, 45 años</strong>
+                        <span>Rosario</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -218,8 +243,8 @@
         <div class="desafio-container" data-aos="fade-up">
             <div class="desafio-visual">
                 <div class="desafio-circle">
-                    <img src="assets/img/arreglo-de-comida-alta-en-proteinas-de-vista-superior.jpg"
-                        alt="Desafío Transformación">
+                    <img src="assets/img/desafio-food.png"
+                        alt="Desafío Transformación — Preparación de comida saludable">
                 </div>
             </div>
 
@@ -291,12 +316,24 @@
                 <span class="form-badge">¡Cupos limitados!</span>
                 <h3>Inscribite a la Lista de Espera</h3>
                 <p class="form-subtitle">Sé la primera en enterarte cuando abramos nuevos cupos.</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Tu nombre*" required>
-                    <input type="tel" placeholder="Tu WhatsApp*" required>
-                    <input type="email" placeholder="Tu email*" required>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre" class="sr-only">Tu nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp" class="sr-only">Tu WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Tu WhatsApp*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Tu email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email*" required>
+                    </div>
                     <button type="submit" class="btn btn-primary">Quiero mi lugar</button>
                 </form>
+                <div class="form-feedback" id="form-feedback" hidden>
+                    <p>✅ ¡Gracias! Te contactaremos pronto.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -333,12 +370,12 @@
         </div>
 
         <div class="footer-bottom">
-            © 2025 — Nutrición y Bienestar. Todos los derechos reservados.
+            © 2026 — Nutrición y Bienestar. Todos los derechos reservados.
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
