@@ -14,6 +14,11 @@
     border: none;
     font-family: $font-family;
 
+    @include respond-to('tablet') {
+        padding: 14px 28px;
+        font-size: 13px;
+    }
+
     &-primary {
         background: $naranja-accent;
         color: #fff;
@@ -105,6 +110,10 @@ footer {
         gap: 60px;
         padding-bottom: 40px;
         border-bottom: 1px solid #eee;
+
+        @include respond-to('laptop') {
+            gap: 40px;
+        }
 
         @include respond-to('tablet') {
             grid-template-columns: 1fr;
@@ -219,11 +228,23 @@ footer {
         font-size: 42px;
         color: $naranja-accent;
         margin-bottom: 15px;
+
+        @include respond-to('tablet') {
+            font-size: 32px;
+        }
+
+        @include respond-to('mobile') {
+            font-size: 28px;
+        }
     }
 
     p {
         color: $gris;
         font-size: 18px;
+
+        @include respond-to('mobile') {
+            font-size: 16px;
+        }
     }
 }
 
@@ -248,6 +269,10 @@ footer {
         font-weight: 700;
         color: $verde-boutique;
         line-height: 1;
+
+        @include respond-to('mobile') {
+            font-size: 36px;
+        }
     }
 
     .stat-label {
@@ -255,6 +280,10 @@ footer {
         margin-top: 10px;
         color: $gris;
         font-size: 16px;
+
+        @include respond-to('mobile') {
+            font-size: 14px;
+        }
     }
 }
 
@@ -323,6 +352,11 @@ footer {
     h2 {
         position: relative;
         display: inline-block;
+        font-size: 36px;
+
+        @include respond-to('mobile') {
+            font-size: 28px;
+        }
 
         &::after {
             content: '';
@@ -383,6 +417,10 @@ footer {
             font-weight: 700;
             line-height: 1;
             margin-bottom: 10px;
+
+            @include respond-to('mobile') {
+                font-size: 42px;
+            }
         }
 
         .target {
@@ -430,8 +468,17 @@ footer {
         z-index: 2;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 
+        @include respond-to('tablet') {
+            transform: scale(1);
+            margin: 0;
+        }
+
         &:hover {
             transform: scale(1.05) translateY(-10px);
+
+            @include respond-to('tablet') {
+                transform: translateY(-10px);
+            }
         }
     }
 }
@@ -451,6 +498,14 @@ footer {
         margin-bottom: 50px;
         position: relative;
         display: inline-block;
+
+        @include respond-to('tablet') {
+            font-size: 32px;
+        }
+
+        @include respond-to('mobile') {
+            font-size: 26px;
+        }
 
         &::after {
             content: '';
@@ -495,6 +550,12 @@ footer {
     position: relative;
     border: 8px solid $verde-boutique;
     box-shadow: 0 15px 50px rgba($verde-boutique, 0.3);
+
+    @include respond-to('tablet') {
+        width: 280px;
+        height: 280px;
+        border-width: 6px;
+    }
 
     &::before {
         content: '';
@@ -618,6 +679,10 @@ footer {
     h2 {
         font-size: 36px;
         margin-bottom: 15px;
+
+        @include respond-to('mobile') {
+            font-size: 28px;
+        }
     }
 
     .cta-subtitle {
@@ -777,6 +842,7 @@ footer {
         opacity: 0;
         transform: translateY(15px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
