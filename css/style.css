@@ -7,7 +7,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
-  background: #FAFAF5;
+  background: #FFFFFF;
   color: #222;
   font-size: 18px;
   line-height: 1.7;
@@ -24,14 +24,14 @@ h6 {
 
 h2 {
   font-size: 42px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin-bottom: 25px;
 }
 
 p,
 li {
   font-size: 20px;
-  color: #555;
+  color: #6B7280;
   margin: 0 0 15px;
 }
 
@@ -65,24 +65,19 @@ header {
   }
 }
 header .logo-box {
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-@media (max-width: 768px) {
-  header .logo-box {
-    width: 50px;
-    height: 50px;
-  }
+header .logo-box .logo-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
-header .logo-box img {
-  width: 100%;
-  height: auto;
-  display: block;
+header .logo-box .logo-text::first-letter {
+  color: #FB7185;
 }
 header .hamburger {
   display: none;
@@ -103,7 +98,7 @@ header .hamburger .hamburger-line {
   display: block;
   width: 24px;
   height: 2px;
-  background: #3A3A3A;
+  background: #1F2937;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -142,13 +137,13 @@ header .nav-main {
   }
 }
 header .nav-main a {
-  color: #3A3A3A;
+  color: #1F2937;
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s;
 }
 header .nav-main a:hover {
-  color: #8AB837;
+  color: #FB7185;
 }
 
 .hero-boutique {
@@ -196,7 +191,7 @@ header .nav-main a:hover {
 .hero-boutique .hero-text h1,
 .hero-boutique .hero-text h2 {
   font-size: 64px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin: 0 0 25px;
   line-height: 1.1;
 }
@@ -221,7 +216,7 @@ header .nav-main a:hover {
 }
 .hero-boutique .hero-text p {
   font-size: 20px;
-  color: #555;
+  color: #6B7280;
   margin-bottom: 40px;
   max-width: 800px;
 }
@@ -287,7 +282,7 @@ header .nav-main a:hover {
   position: absolute;
   z-index: 1;
   border-radius: 50%;
-  background: #8AB837;
+  background: #FB7185;
   opacity: 0.15;
 }
 .hero-boutique .blob-main {
@@ -332,7 +327,7 @@ section {
 }
 
 .about-content {
-  background-color: #FFE4B5;
+  background-color: #FFF1F2;
   padding: 60px 40px;
   border-radius: 30px;
   text-align: center;
@@ -423,14 +418,14 @@ section {
   position: relative;
   padding-left: 45px;
   font-size: 20px;
-  color: #555;
+  color: #6B7280;
   margin-bottom: 20px;
 }
 .metodo-container .metodo-text ul li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #8AB837;
+  color: #FB7185;
   font-weight: 700;
 }
 @media (max-width: 768px) {
@@ -467,32 +462,32 @@ section {
   }
 }
 .btn-primary {
-  background: #FF6B00;
+  background: #111827;
   color: #fff;
-  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(17, 24, 39, 0.3);
 }
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 107, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(17, 24, 39, 0.4);
 }
 .btn-outline {
   background: transparent;
-  border: 2px solid #8AB837;
-  color: #8AB837;
+  border: 2px solid #FB7185;
+  color: #FB7185;
 }
 .btn-outline:hover {
-  background: #8AB837;
+  background: #FB7185;
   color: #fff;
 }
 .btn-link {
   background: transparent;
-  color: #3A3A3A;
+  color: #1F2937;
   text-decoration: underline;
   padding-left: 0;
   padding-right: 0;
 }
 .btn-link:hover {
-  color: #8AB837;
+  color: #FB7185;
 }
 
 .cards {
@@ -516,8 +511,8 @@ section {
 .card .tag {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(138, 184, 55, 0.1);
-  color: #8AB837;
+  background: rgba(251, 113, 133, 0.1);
+  color: #FB7185;
   border-radius: 30px;
   font-size: 12px;
   font-weight: 700;
@@ -527,10 +522,10 @@ section {
 .card h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #3A3A3A;
+  color: #1F2937;
 }
 .card p {
-  color: #555;
+  color: #6B7280;
   line-height: 1.7;
 }
 
@@ -573,7 +568,7 @@ footer .footer-brand .footer-logo img {
   object-fit: cover;
 }
 footer .footer-brand p {
-  color: #555;
+  color: #6B7280;
   font-size: 15px;
   max-width: 300px;
 }
@@ -584,7 +579,7 @@ footer .footer-brand p {
 }
 footer .footer-nav h4 {
   font-size: 16px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -598,16 +593,16 @@ footer .footer-nav ul li {
   margin-bottom: 10px;
 }
 footer .footer-nav ul li a {
-  color: #555;
+  color: #6B7280;
   font-size: 15px;
   transition: color 0.3s;
 }
 footer .footer-nav ul li a:hover {
-  color: #8AB837;
+  color: #FB7185;
 }
 footer .footer-social h4 {
   font-size: 16px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -631,7 +626,7 @@ footer .footer-social .social-icons a:hover {
 footer .footer-bottom {
   text-align: center;
   padding-top: 30px;
-  color: #555;
+  color: #6B7280;
   font-size: 14px;
 }
 
@@ -646,7 +641,7 @@ footer .footer-bottom {
 }
 .testimonios-header h2 {
   font-size: 42px;
-  color: #FF6B00;
+  color: #111827;
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
@@ -660,7 +655,7 @@ footer .footer-bottom {
   }
 }
 .testimonios-header p {
-  color: #555;
+  color: #6B7280;
   font-size: 18px;
 }
 @media (max-width: 576px) {
@@ -689,7 +684,7 @@ footer .footer-bottom {
   display: block;
   font-size: 48px;
   font-weight: 700;
-  color: #8AB837;
+  color: #FB7185;
   line-height: 1;
 }
 @media (max-width: 576px) {
@@ -700,7 +695,7 @@ footer .footer-bottom {
 .stat-item .stat-label {
   display: block;
   margin-top: 10px;
-  color: #555;
+  color: #6B7280;
   font-size: 16px;
 }
 @media (max-width: 576px) {
@@ -731,7 +726,7 @@ footer .footer-bottom {
 }
 .testimonio-card .testimonio-quote {
   font-size: 60px;
-  color: #FF6B00;
+  color: #FB7185;
   line-height: 1;
   opacity: 0.3;
   position: absolute;
@@ -741,7 +736,7 @@ footer .footer-bottom {
 .testimonio-card p {
   margin-top: 30px;
   font-size: 16px;
-  color: #555;
+  color: #6B7280;
   line-height: 1.7;
   font-style: italic;
 }
@@ -752,11 +747,11 @@ footer .footer-bottom {
 }
 .testimonio-card .testimonio-author strong {
   display: block;
-  color: #3A3A3A;
+  color: #1F2937;
   font-size: 15px;
 }
 .testimonio-card .testimonio-author span {
-  color: #555;
+  color: #6B7280;
   font-size: 13px;
 }
 
@@ -782,12 +777,12 @@ footer .footer-bottom {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: #FF6B00;
+  background: #FB7185;
   border-radius: 2px;
 }
 .planes-header p {
   margin-top: 30px;
-  color: #555;
+  color: #6B7280;
 }
 
 .pricing-cards {
@@ -812,7 +807,7 @@ footer .footer-bottom {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 .pricing-card .pricing-header {
-  background: #8AB837;
+  background: #FB7185;
   color: #fff;
   padding: 40px 30px;
   text-align: center;
@@ -849,13 +844,13 @@ footer .footer-bottom {
   padding-left: 25px;
   margin-bottom: 15px;
   font-size: 16px;
-  color: #555;
+  color: #6B7280;
 }
 .pricing-card .pricing-features li::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #8AB837;
+  color: #FB7185;
   font-weight: 700;
   font-size: 20px;
 }
@@ -919,7 +914,7 @@ footer .footer-bottom {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: #FF6B00;
+  background: #FB7185;
   border-radius: 2px;
 }
 
@@ -951,8 +946,8 @@ footer .footer-bottom {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 8px solid #8AB837;
-  box-shadow: 0 15px 50px rgba(138, 184, 55, 0.3);
+  border: 8px solid #FB7185;
+  box-shadow: 0 15px 50px rgba(251, 113, 133, 0.3);
 }
 @media (max-width: 768px) {
   .desafio-circle {
@@ -968,7 +963,7 @@ footer .footer-bottom {
   right: -20px;
   width: 100px;
   height: 100px;
-  background: #8AB837;
+  background: #FB7185;
   border-radius: 50%;
   opacity: 0.2;
 }
@@ -979,7 +974,7 @@ footer .footer-bottom {
   left: -30px;
   width: 150px;
   height: 150px;
-  background: #8AB837;
+  background: #FB7185;
   border-radius: 50%;
   opacity: 0.15;
 }
@@ -991,11 +986,11 @@ footer .footer-bottom {
 
 .desafio-content h3 {
   font-size: 28px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin-bottom: 15px;
 }
 .desafio-content > p {
-  color: #555;
+  color: #6B7280;
   margin-bottom: 30px;
   font-size: 17px;
 }
@@ -1009,14 +1004,14 @@ footer .footer-bottom {
   position: relative;
   padding-left: 30px;
   margin-bottom: 12px;
-  color: #555;
+  color: #6B7280;
   font-size: 16px;
 }
 .desafio-list li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #8AB837;
+  color: #FB7185;
   font-weight: 700;
   font-size: 18px;
 }
@@ -1028,7 +1023,7 @@ footer .footer-bottom {
 }
 .desafio-social span {
   font-weight: 600;
-  color: #3A3A3A;
+  color: #1F2937;
 }
 .desafio-social .social-icons {
   display: flex;
@@ -1077,7 +1072,7 @@ footer .footer-bottom {
   }
 }
 .cta-info .cta-subtitle {
-  color: #555;
+  color: #6B7280;
   margin-bottom: 40px;
 }
 
@@ -1100,21 +1095,21 @@ footer .footer-bottom {
 }
 .contact-details .contact-label {
   font-weight: 700;
-  color: #3A3A3A;
+  color: #1F2937;
   font-size: 14px;
 }
 .contact-details .contact-value {
-  color: #555;
+  color: #6B7280;
   font-size: 15px;
   line-height: 1.6;
 }
 .contact-details .contact-value a {
-  color: #555;
+  color: #6B7280;
   text-decoration: underline;
   transition: color 0.3s;
 }
 .contact-details .contact-value a:hover {
-  color: #8AB837;
+  color: #FB7185;
 }
 
 .cta-form-container {
@@ -1126,7 +1121,7 @@ footer .footer-bottom {
 .cta-form-container h3 {
   text-align: center;
   font-size: 22px;
-  color: #3A3A3A;
+  color: #1F2937;
   margin-bottom: 30px;
 }
 
@@ -1145,7 +1140,7 @@ footer .footer-bottom {
 }
 .contact-form input:focus {
   outline: none;
-  border-color: #8AB837;
+  border-color: #FB7185;
 }
 .contact-form input::placeholder {
   color: #aaa;
@@ -1178,7 +1173,7 @@ footer .footer-bottom {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #8AB837;
+  border: 2px solid #FB7185;
   flex-shrink: 0;
 }
 
@@ -1189,14 +1184,14 @@ footer .footer-bottom {
 }
 .form-feedback p {
   font-size: 18px;
-  color: #8AB837;
+  color: #FB7185;
   font-weight: 600;
 }
 
 .form-badge {
   display: inline-block;
-  background: rgba(255, 107, 0, 0.1);
-  color: #FF6B00;
+  background: rgba(17, 24, 39, 0.1);
+  color: #111827;
   padding: 6px 18px;
   border-radius: 30px;
   font-size: 13px;
@@ -1208,7 +1203,7 @@ footer .footer-bottom {
 
 .form-subtitle {
   font-size: 15px !important;
-  color: #555;
+  color: #6B7280;
   margin-bottom: 20px;
 }
 

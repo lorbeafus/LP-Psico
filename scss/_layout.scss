@@ -14,23 +14,20 @@ header {
     }
 
     .logo-box {
-        width: 50px;
-        height: 50px;
-        border-radius: $radius;
-        overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: center;
 
-        @include respond-to('tablet') {
-            width: 50px;
-            height: 50px;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .logo-text {
+            font-family: $font-family;
+            font-size: 24px;
+            font-weight: 800;
+            color: $negro;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            
+            &::first-letter {
+                color: $rosa-main;
+            }
         }
     }
 
@@ -104,7 +101,7 @@ header {
             transition: color 0.3s;
 
             &:hover {
-                color: $verde-boutique;
+                color: $rosa-main;
             }
         }
     }
@@ -240,7 +237,7 @@ header {
         position: absolute;
         z-index: 1;
         border-radius: 50%;
-        background: $verde-boutique;
+        background: $rosa-main;
         opacity: 0.15;
 
         &-main {
@@ -275,7 +272,7 @@ section {
 }
 
 .about-content {
-    background-color: $naranja-claro;
+    background-color: $rosa-soft;
     padding: 60px 40px;
     border-radius: $radius;
     text-align: center;
@@ -360,7 +357,7 @@ section {
                     content: '✓';
                     position: absolute;
                     left: 0;
-                    color: $verde-boutique;
+                    color: $rosa-main;
                     font-weight: 700;
                 }
 

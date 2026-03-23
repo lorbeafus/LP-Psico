@@ -20,23 +20,23 @@
     }
 
     &-primary {
-        background: $naranja-accent;
+        background: $negro;
         color: #fff;
-        box-shadow: 0 4px 15px rgba($naranja-accent, 0.3);
+        box-shadow: 0 4px 15px rgba($negro, 0.3);
 
         &:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba($naranja-accent, 0.4);
+            box-shadow: 0 8px 25px rgba($negro, 0.4);
         }
     }
 
     &-outline {
         background: transparent;
-        border: 2px solid $verde-boutique;
-        color: $verde-boutique;
+        border: 2px solid $rosa-main;
+        color: $rosa-main;
 
         &:hover {
-            background: $verde-boutique;
+            background: $rosa-main;
             color: #fff;
         }
     }
@@ -49,7 +49,7 @@
         padding-right: 0;
 
         &:hover {
-            color: $verde-boutique;
+            color: $rosa-main;
         }
     }
 }
@@ -76,8 +76,8 @@
     .tag {
         display: inline-block;
         padding: 6px 16px;
-        background: rgba($verde-boutique, 0.1);
-        color: $verde-boutique;
+        background: rgba($rosa-main, 0.1);
+        color: $rosa-main;
         border-radius: $radius;
         font-size: 12px;
         font-weight: 700;
@@ -171,7 +171,7 @@ footer {
                     transition: color 0.3s;
 
                     &:hover {
-                        color: $verde-boutique;
+                        color: $rosa-main;
                     }
                 }
             }
@@ -226,7 +226,7 @@ footer {
 
     h2 {
         font-size: 42px;
-        color: $naranja-accent;
+        color: $negro;
         margin-bottom: 15px;
 
         @include respond-to('tablet') {
@@ -267,7 +267,7 @@ footer {
         display: block;
         font-size: 48px;
         font-weight: 700;
-        color: $verde-boutique;
+        color: $rosa-main;
         line-height: 1;
 
         @include respond-to('mobile') {
@@ -310,7 +310,7 @@ footer {
 
     .testimonio-quote {
         font-size: 60px;
-        color: $naranja-accent;
+        color: $rosa-main;
         line-height: 1;
         opacity: 0.3;
         position: absolute;
@@ -366,7 +366,7 @@ footer {
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background: $naranja-accent;
+            background: $rosa-main;
             border-radius: 2px;
         }
     }
@@ -400,7 +400,7 @@ footer {
     }
 
     .pricing-header {
-        background: $verde-boutique;
+        background: $rosa-main;
         color: #fff;
         padding: 40px 30px;
         text-align: center;
@@ -446,7 +446,7 @@ footer {
                 content: '•';
                 position: absolute;
                 left: 0;
-                color: $verde-boutique;
+                color: $rosa-main;
                 font-weight: 700;
                 font-size: 20px;
             }
@@ -515,7 +515,7 @@ footer {
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background: $naranja-accent;
+            background: $rosa-main;
             border-radius: 2px;
         }
     }
@@ -548,8 +548,8 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    border: 8px solid $verde-boutique;
-    box-shadow: 0 15px 50px rgba($verde-boutique, 0.3);
+    border: 8px solid $rosa-main;
+    box-shadow: 0 15px 50px rgba($rosa-main, 0.3);
 
     @include respond-to('tablet') {
         width: 280px;
@@ -564,7 +564,7 @@ footer {
         right: -20px;
         width: 100px;
         height: 100px;
-        background: $verde-boutique;
+        background: $rosa-main;
         border-radius: 50%;
         opacity: 0.2;
     }
@@ -576,7 +576,7 @@ footer {
         left: -30px;
         width: 150px;
         height: 150px;
-        background: $verde-boutique;
+        background: $rosa-main;
         border-radius: 50%;
         opacity: 0.15;
     }
@@ -618,7 +618,7 @@ footer {
             content: '✓';
             position: absolute;
             left: 0;
-            color: $verde-boutique;
+            color: $rosa-main;
             font-weight: 700;
             font-size: 18px;
         }
@@ -727,7 +727,7 @@ footer {
             transition: color 0.3s;
 
             &:hover {
-                color: $verde-boutique;
+                color: $rosa-main;
             }
         }
     }
@@ -762,7 +762,7 @@ footer {
 
         &:focus {
             outline: none;
-            border-color: $verde-boutique;
+            border-color: $rosa-main;
         }
 
         &::placeholder {
@@ -801,7 +801,7 @@ footer {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid $verde-boutique;
+    border: 2px solid $rosa-main;
     flex-shrink: 0;
 }
 
@@ -813,15 +813,15 @@ footer {
 
     p {
         font-size: 18px;
-        color: $verde-boutique;
+        color: $rosa-main;
         font-weight: 600;
     }
 }
 
 .form-badge {
     display: inline-block;
-    background: rgba($naranja-accent, .1);
-    color: $naranja-accent;
+    background: rgba($negro, .1);
+    color: $negro;
     padding: 6px 18px;
     border-radius: $radius;
     font-size: 13px;
