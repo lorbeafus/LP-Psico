@@ -4,7 +4,7 @@
 header {
 
     @include container();
-    padding: 12px 0;
+    padding: 6px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +108,7 @@ header {
 }
 
 .hero-boutique {
-    padding: 40px 0 60px;
+    padding: 20px 0 40px;
     background-color: #fff;
     overflow: hidden;
     width: 100%;
@@ -209,8 +209,8 @@ header {
 
     .blob-container {
         position: relative;
-        width: 450px;
-        height: 450px;
+        width: 380px;
+        height: 380px;
 
         @include respond-to('laptop') {
             width: 380px;
@@ -241,8 +241,8 @@ header {
         opacity: 0.15;
 
         &-main {
-            width: 500px;
-            height: 500px;
+            width: 430px;
+            height: 430px;
             top: -25px;
             left: -25px;
             border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -268,6 +268,13 @@ section {
 
     @include respond-to('tablet') {
         padding: 40px 0;
+    }
+}
+
+#servicios {
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 

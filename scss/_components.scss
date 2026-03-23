@@ -35,9 +35,10 @@
         border: 2px solid $rosa-main;
         color: $rosa-main;
 
-        &:hover {
+        &:hover,
+        header .nav-main &:hover {
             background: $rosa-main;
-            color: #f7eded;
+            color: #fff !important;
         }
     }
 
@@ -56,14 +57,15 @@
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    justify-content: center;
+    gap: 30px;
     margin-top: 50px;
 }
 
 .card {
     background: #fff;
-    padding: 40px;
+    padding: 30px;
     border-radius: $radius;
     box-shadow: $shadow;
     transition: transform 0.3s;

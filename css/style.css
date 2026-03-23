@@ -54,7 +54,7 @@ header {
   }
 }
 header {
-  padding: 12px 0;
+  padding: 6px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,7 +147,7 @@ header .nav-main a:hover {
 }
 
 .hero-boutique {
-  padding: 40px 0 60px;
+  padding: 20px 0 40px;
   background-color: #fff;
   overflow: hidden;
   width: 100%;
@@ -254,8 +254,8 @@ header .nav-main a:hover {
 }
 .hero-boutique .blob-container {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 380px;
+  height: 380px;
 }
 @media (max-width: 1024px) {
   .hero-boutique .blob-container {
@@ -286,8 +286,8 @@ header .nav-main a:hover {
   opacity: 0.15;
 }
 .hero-boutique .blob-main {
-  width: 500px;
-  height: 500px;
+  width: 430px;
+  height: 430px;
   top: -25px;
   left: -25px;
   border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
@@ -324,6 +324,10 @@ section {
   section {
     padding: 40px 0;
   }
+}
+#servicios h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -475,9 +479,10 @@ section {
   border: 2px solid #FB7185;
   color: #FB7185;
 }
-.btn-outline:hover {
+.btn-outline:hover,
+header .nav-main .btn-outline:hover {
   background: #FB7185;
-  color: #f7eded;
+  color: #fff !important;
 }
 .btn-link {
   background: transparent;
@@ -492,14 +497,15 @@ section {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+  justify-content: center;
+  gap: 30px;
   margin-top: 50px;
 }
 
 .card {
   background: #fff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 30px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
