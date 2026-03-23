@@ -477,7 +477,7 @@ section {
 }
 .btn-outline:hover {
   background: #FB7185;
-  color: #fff;
+  color: #f7eded;
 }
 .btn-link {
   background: transparent;
@@ -1216,6 +1216,42 @@ footer .footer-bottom {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* WhatsApp Icon Styles */
+.icon-whatsapp {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  color: #6B7280; /* Match existing icon colors */
+  transition: all 0.3s;
+}
+
+.social-icons a:hover .icon-whatsapp {
+  color: #25D366; /* WhatsApp Green on hover */
+  transform: scale(1.1);
+}
+
+.icon-instagram {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  color: #6B7280; /* Match existing icon colors */
+  transition: all 0.3s;
+}
+
+.social-icons a:hover .icon-instagram {
+  color: #E1306C; /* Instagram Pink/Red on hover */
+  transform: scale(1.1);
+}
+
+.contact-details .contact-item .contact-value a[href^="https://wa.me"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
