@@ -16,20 +16,8 @@ header {
     .logo-box {
         display: flex;
         align-items: center;
-
-        .logo-text {
-            font-family: $font-family;
-            font-size: 24px;
-            font-weight: 800;
-            color: $negro;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-            
-            &::first-letter {
-                color: $rosa-main;
-            }
-        }
     }
+
 
     .hamburger {
         display: none;
