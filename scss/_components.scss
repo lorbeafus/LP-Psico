@@ -665,7 +665,7 @@ footer {
     align-items: start;
 
     @include respond-to('tablet') {
-        grid-template-columns: 1fr;
+        grid-template_columns: 1fr;
         gap: 40px;
     }
 }
@@ -841,5 +841,61 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+// Floating WhatsApp Button
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: floatIn 0.8s ease-out;
+
+    &:hover {
+        transform: scale(1.1) translateY(-5px);
+        background-color: #128c7e;
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    @include respond-to('tablet') {
+        width: 55px;
+        height: 55px;
+        bottom: 25px;
+        right: 25px;
+
+        svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
