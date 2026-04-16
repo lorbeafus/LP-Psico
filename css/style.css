@@ -152,6 +152,18 @@ header .nav-main a {
 header .nav-main a:hover {
   color: #FB7185;
 }
+.nav-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.nav-cta-desc {
+  font-size: 11px;
+  color: #6B7280;
+  font-weight: 400;
+  text-align: center;
+}
 
 .hero-boutique {
   padding: 20px 0 40px;
@@ -520,6 +532,21 @@ header .nav-main .btn-outline:hover {
 }
 .card:hover {
   transform: translateY(-10px);
+}
+.card-featured {
+  transform: scale(1.05);
+  background: #FFF1F2;
+  border: 1.5px solid #FB7185;
+  box-shadow: 0 12px 24px rgba(251, 113, 133, 0.15);
+  position: relative;
+  z-index: 2;
+}
+.card-featured:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+.card-featured .tag {
+  background: #FB7185;
+  color: #fff;
 }
 .card .tag {
   display: inline-block;
@@ -1222,6 +1249,92 @@ footer .footer-bottom {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #fdfdfd;
+  padding: 80px 0 !important;
+}
+
+.faq-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 40px;
+}
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 0 20px;
+  }
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(251, 113, 133, 0.1);
+  color: #FB7185;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.faq-header h2 {
+  font-size: 36px;
+  color: #1F2937;
+  margin-bottom: 0;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  border-color: #FB7185;
+  box-shadow: 0 8px 20px rgba(251, 113, 133, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #1F2937;
+  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #6B7280;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 60px 0 !important;
+  }
+  .faq-header h2 {
+    font-size: 28px;
   }
 }
 
