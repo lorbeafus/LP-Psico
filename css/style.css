@@ -396,9 +396,9 @@ section {
 .metodo-container {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   background-color: #fff;
-  padding: 40px;
+  padding: 60px;
   border-radius: 30px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
@@ -417,7 +417,7 @@ section {
   }
 }
 .metodo-container img {
-  width: 280px;
+  width: 330px;
   height: auto;
   border-radius: 50% 50% 30% 70%/60% 40% 60% 40%;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -438,31 +438,31 @@ section {
 }
 .metodo-container .metodo-text h2 {
   margin-top: 0;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 12px;
 }
 .metodo-container .metodo-text p {
-  font-size: 15px;
-  line-height: 1.4;
-  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 @media (max-width: 576px) {
   .metodo-container .metodo-text h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 .metodo-container .metodo-text ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 .metodo-container .metodo-text ul li {
   position: relative;
-  padding-left: 25px;
-  font-size: 15px;
-  line-height: 1.35;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 1.45;
   color: #6B7280;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .metodo-container .metodo-text ul li::before {
   content: "✓";
@@ -474,14 +474,14 @@ section {
 @media (max-width: 768px) {
   .metodo-container .metodo-text ul li {
     text-align: left;
-    font-size: 15px;
-    padding-left: 25px;
+    font-size: 16px;
+    padding-left: 28px;
   }
 }
 @media (max-width: 576px) {
   .metodo-container .metodo-text ul li {
-    font-size: 14px;
-    padding-left: 25px;
+    font-size: 15px;
+    padding-left: 28px;
   }
 }
 
@@ -538,14 +538,14 @@ header .nav-main .btn-outline:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
   justify-content: center;
-  gap: 25px;
-  margin-top: 30px;
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .card {
   background: #fff;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 30px;
+  border-radius: 25px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
   border: 1px solid rgba(0, 0, 0, 0.03);
@@ -570,24 +570,24 @@ header .nav-main .btn-outline:hover {
 }
 .card .tag {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 5px 14px;
   background: rgba(251, 113, 133, 0.1);
   color: #FB7185;
   border-radius: 30px;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 12px;
   color: #1F2937;
 }
 .card p {
   color: #6B7280;
-  line-height: 1.4;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 footer {
@@ -762,7 +762,7 @@ footer .footer-bottom {
 .testimonios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -864,17 +864,17 @@ footer .footer-bottom {
 .pricing-card .pricing-header {
   background: #FB7185;
   color: #fff;
-  padding: 30px 20px;
+  padding: 35px 25px;
   text-align: center;
 }
 .pricing-card .pricing-header h3 {
-  font-size: 20px;
-  margin: 0 0 10px;
+  font-size: 22px;
+  margin: 0 0 12px;
   font-weight: 600;
   font-style: italic;
 }
 .pricing-card .pricing-header .price {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 10px;
@@ -890,16 +890,16 @@ footer .footer-bottom {
 }
 .pricing-card .pricing-features {
   list-style: none;
-  padding: 20px;
+  padding: 25px;
   margin: 0;
   flex: 1;
 }
 .pricing-card .pricing-features li {
   position: relative;
   padding-left: 25px;
-  margin-bottom: 8px;
-  font-size: 15px;
-  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.45;
   color: #6B7280;
 }
 .pricing-card .pricing-features li::before {
@@ -1343,17 +1343,42 @@ footer .footer-bottom {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
 .faq-item h3 {
   font-size: 18px;
   color: #1F2937;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   font-weight: 700;
   line-height: 1.4;
+  position: relative;
+  padding-right: 20px;
+}
+.faq-item h3::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  color: #FB7185;
+  font-size: 24px;
+}
+.faq-item[open] h3::after {
+  content: "-";
+}
+.faq-item[open] h3 {
+  margin-bottom: 15px;
 }
 
 .faq-item p {
   font-size: 16px;
   color: #6B7280;
+  margin-top: 15px;
   margin-bottom: 0;
   line-height: 1.6;
 }
