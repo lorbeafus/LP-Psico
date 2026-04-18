@@ -396,9 +396,9 @@ section {
 .metodo-container {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
   background-color: #fff;
-  padding: 80px;
+  padding: 40px;
   border-radius: 30px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
@@ -417,7 +417,7 @@ section {
   }
 }
 .metodo-container img {
-  width: 400px;
+  width: 280px;
   height: auto;
   border-radius: 50% 50% 30% 70%/60% 40% 60% 40%;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -438,24 +438,31 @@ section {
 }
 .metodo-container .metodo-text h2 {
   margin-top: 0;
-  font-size: 42px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.metodo-container .metodo-text p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 @media (max-width: 576px) {
   .metodo-container .metodo-text h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 .metodo-container .metodo-text ul {
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .metodo-container .metodo-text ul li {
   position: relative;
-  padding-left: 45px;
-  font-size: 20px;
+  padding-left: 25px;
+  font-size: 15px;
+  line-height: 1.35;
   color: #6B7280;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .metodo-container .metodo-text ul li::before {
   content: "✓";
@@ -467,14 +474,14 @@ section {
 @media (max-width: 768px) {
   .metodo-container .metodo-text ul li {
     text-align: left;
-    font-size: 18px;
-    padding-left: 35px;
+    font-size: 15px;
+    padding-left: 25px;
   }
 }
 @media (max-width: 576px) {
   .metodo-container .metodo-text ul li {
-    font-size: 16px;
-    padding-left: 30px;
+    font-size: 14px;
+    padding-left: 25px;
   }
 }
 
@@ -531,14 +538,14 @@ header .nav-main .btn-outline:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
   justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .card {
   background: #fff;
-  padding: 30px;
-  border-radius: 30px;
+  padding: 20px;
+  border-radius: 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
   border: 1px solid rgba(0, 0, 0, 0.03);
@@ -563,23 +570,24 @@ header .nav-main .btn-outline:hover {
 }
 .card .tag {
   display: inline-block;
-  padding: 6px 16px;
+  padding: 4px 12px;
   background: rgba(251, 113, 133, 0.1);
   color: #FB7185;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .card h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #1F2937;
 }
 .card p {
   color: #6B7280;
-  line-height: 1.7;
+  line-height: 1.4;
+  font-size: 15px;
 }
 
 footer {
@@ -856,17 +864,17 @@ footer .footer-bottom {
 .pricing-card .pricing-header {
   background: #FB7185;
   color: #fff;
-  padding: 40px 30px;
+  padding: 30px 20px;
   text-align: center;
 }
 .pricing-card .pricing-header h3 {
-  font-size: 24px;
-  margin: 0 0 15px;
+  font-size: 20px;
+  margin: 0 0 10px;
   font-weight: 600;
   font-style: italic;
 }
 .pricing-card .pricing-header .price {
-  font-size: 56px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 10px;
@@ -882,15 +890,16 @@ footer .footer-bottom {
 }
 .pricing-card .pricing-features {
   list-style: none;
-  padding: 30px;
+  padding: 20px;
   margin: 0;
   flex: 1;
 }
 .pricing-card .pricing-features li {
   position: relative;
   padding-left: 25px;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.4;
   color: #6B7280;
 }
 .pricing-card .pricing-features li::before {
@@ -905,7 +914,7 @@ footer .footer-bottom {
   margin-bottom: 0;
 }
 .pricing-card .btn {
-  margin: 0 30px 30px;
+  margin: 0 20px 20px;
   text-align: center;
 }
 .pricing-card.featured {
@@ -930,7 +939,7 @@ footer .footer-bottom {
 
 .desafio-section {
   text-align: center;
-  padding: 80px 0 !important;
+  padding: 40px 0 !important;
   margin-bottom: 40px;
   background: #fff;
   border-radius: 30px;
@@ -938,8 +947,8 @@ footer .footer-bottom {
   transition: transform 0.3s;
 }
 .desafio-section > h2 {
-  font-size: 42px;
-  margin-bottom: 50px;
+  font-size: 38px;
+  margin-bottom: 30px;
   position: relative;
   display: inline-block;
 }
@@ -956,7 +965,7 @@ footer .footer-bottom {
 .desafio-section > h2::after {
   content: "";
   position: absolute;
-  bottom: -15px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -967,8 +976,8 @@ footer .footer-bottom {
 
 .desafio-container {
   display: grid;
-  grid-template-columns: minmax(360px, 4fr) 7fr;
-  gap: 60px;
+  grid-template-columns: minmax(320px, 4fr) 7fr;
+  gap: 50px;
   align-items: center;
   text-align: left;
   max-width: 1150px;
@@ -993,8 +1002,8 @@ footer .footer-bottom {
 }
 
 .desafio-circle {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -1003,8 +1012,8 @@ footer .footer-bottom {
 }
 @media (max-width: 768px) {
   .desafio-circle {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     border-width: 6px;
   }
 }
@@ -1037,27 +1046,29 @@ footer .footer-bottom {
 }
 
 .desafio-content h3 {
-  font-size: 28px;
+  font-size: 26px;
   color: #1F2937;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .desafio-content > p {
   color: #6B7280;
-  margin-bottom: 30px;
-  font-size: 17px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .desafio-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 0 25px;
 }
 .desafio-list li {
   position: relative;
   padding-left: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: #6B7280;
   font-size: 16px;
+  line-height: 1.5;
 }
 .desafio-list li::before {
   content: "✓";
