@@ -967,11 +967,11 @@ footer .footer-bottom {
 
 .desafio-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: minmax(360px, 4fr) 7fr;
+  gap: 60px;
   align-items: center;
   text-align: left;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -984,7 +984,12 @@ footer .footer-bottom {
 
 .desafio-visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .desafio-visual {
+    justify-content: center;
+  }
 }
 
 .desafio-circle {
